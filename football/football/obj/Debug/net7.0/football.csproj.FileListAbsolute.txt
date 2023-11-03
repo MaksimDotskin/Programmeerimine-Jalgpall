@@ -1,0 +1,15 @@
+/Users/maksimdockin/Projects/football/football/obj/Debug/net7.0/football.csproj.AssemblyReference.cache
+/Users/maksimdockin/Projects/football/football/obj/Debug/net7.0/football.GeneratedMSBuildEditorConfig.editorconfig
+/Users/maksimdockin/Projects/football/football/obj/Debug/net7.0/football.AssemblyInfoInputs.cache
+/Users/maksimdockin/Projects/football/football/obj/Debug/net7.0/football.AssemblyInfo.cs
+/Users/maksimdockin/Projects/football/football/obj/Debug/net7.0/football.csproj.CoreCompileInputs.cache
+/Users/maksimdockin/Projects/football/football/bin/Debug/net7.0/football
+/Users/maksimdockin/Projects/football/football/bin/Debug/net7.0/football.deps.json
+/Users/maksimdockin/Projects/football/football/bin/Debug/net7.0/football.runtimeconfig.json
+/Users/maksimdockin/Projects/football/football/bin/Debug/net7.0/football.dll
+/Users/maksimdockin/Projects/football/football/bin/Debug/net7.0/football.pdb
+/Users/maksimdockin/Projects/football/football/obj/Debug/net7.0/football.dll
+/Users/maksimdockin/Projects/football/football/obj/Debug/net7.0/refint/football.dll
+/Users/maksimdockin/Projects/football/football/obj/Debug/net7.0/football.pdb
+/Users/maksimdockin/Projects/football/football/obj/Debug/net7.0/football.genruntimeconfig.cache
+/Users/maksimdockin/Projects/football/football/obj/Debug/net7.0/ref/football.dll
