@@ -1,4 +1,6 @@
-﻿namespace Football
+﻿using System.Threading.Tasks.Sources;
+
+namespace Football
 {
 
     public class Game
@@ -7,6 +9,7 @@
         public Team AwayTeam { get; } //команда 2
         public Stadium Stadium { get; } //стадион
         public Ball Ball { get; private set; } //мяч
+   
 
         public Game(Team homeTeam, Team awayTeam, Stadium stadium) //конструктор 
         {
@@ -22,6 +25,8 @@
             Ball = new Ball(Stadium.Width / 2, Stadium.Height / 2, this); //мяч по центру 
             HomeTeam.StartGame(Stadium.Width / 2, Stadium.Height); //делим поле пополам
             AwayTeam.StartGame(Stadium.Width / 2, Stadium.Height);
+
+
         }
         private (double, double) GetPositionForAwayTeam(double x, double y)
         {
@@ -56,22 +61,21 @@
             AwayTeam.Move(); //2
             Ball.Move(); //мяча
             Draw draw = new Draw();
-            Program p = new Program();
             Console.ForegroundColor = ConsoleColor.Green;
             foreach (var player in HomeTeam.Players)
             {
 
-                draw.DrawPoint(p.DoubleToInt(player.X), p.DoubleToInt(player.Y), player.Sym);
+                draw.DrawPoint(((int)player.X),((int)player.Y), player.Sym);
 
             }
             Console.ForegroundColor = ConsoleColor.Blue;
             foreach (var player in AwayTeam.Players)
             {
 
-                draw.DrawPoint(p.DoubleToInt(player.X), p.DoubleToInt(player.Y), player.Sym);
+                draw.DrawPoint(((int)player.X),((int)player.Y), player.Sym);
             }
             Console.ForegroundColor = ConsoleColor.Red;
-            draw.DrawPoint(p.DoubleToInt(Ball.X), p.DoubleToInt(Ball.Y), '0');
+            draw.DrawPoint(((int)Ball.X),((int)Ball.Y), '0');
             Console.ResetColor();
         }
     }

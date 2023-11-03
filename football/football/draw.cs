@@ -43,6 +43,11 @@ namespace Football
             }
 
         }
+        public void DrawTekst(int x, int y, string text)
+        {
+            Console.SetCursorPosition(x, y);
+            Console.WriteLine(text);
+        }
 
 
 

@@ -9,10 +9,12 @@ namespace Football
         public List<Player> Players { get; } = new List<Player>(); //список обьектов класса player
         public string Name { get; private set; }
         public Game Game { get; set; }
+        public int Score {  get; set; }
 
-        public Team(string name)//конструктор обекта team
+        public Team(string name,int score)//конструктор обекта team
         {
             Name = name;
+            Score = score;
         }
 
         public void StartGame(int width, int height) //метод начала игры

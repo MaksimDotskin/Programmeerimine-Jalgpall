@@ -40,6 +40,13 @@ namespace Football
             {
                 _vx = 0; //если улетел за поле, то кординаты мяча 0
                 _vy = 0;
+                _game.Start();
+                Draw draw= new Draw();
+
+
+                Console.ForegroundColor = ConsoleColor.Red;
+                draw.DrawTekst(_game.Stadium.GetStadiumWidth() + 20, 3, "Aut, pall keskele!");
+                Console.ResetColor();
                
             }
         }

@@ -14,8 +14,8 @@ namespace Football
         public Team? Team { get; set; } = null; //команда где играет игрок
 
         private const double MaxSpeed = 5;//максимальная скорость
-        private const double MaxKickSpeed = 25; //максимальная скорость удара
-        private const double BallKickDistance = 10; //расстрояние удара
+        private const double MaxKickSpeed = 15; //максимальная скорость удара
+        private const double BallKickDistance = 3; //расстрояние удара
 
         private Random _random = new Random(); //случайное значение
 
@@ -70,7 +70,8 @@ namespace Football
             {
                 _vx = 0;
                 _vy = 0;
-             
+              
+
             }
 
             if (GetDistanceToBall() < BallKickDistance) //если расстояние до мяча меньше дистанции удара, то задать скорость 
@@ -79,7 +80,10 @@ namespace Football
                     MaxKickSpeed * _random.NextDouble(),
                     MaxKickSpeed * (_random.NextDouble() - 0.5)
                     );
-                
+                this.Team.Score++;
+            
+
+
             }
 
             var newX = X + _vx;
